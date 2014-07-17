@@ -12,11 +12,11 @@
 		3F32A066196C577600F5BC1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F32A064196C577600F5BC1C /* Main.storyboard */; };
 		3F32A068196C577600F5BC1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F32A067196C577600F5BC1C /* Images.xcassets */; };
 		3F32A074196C577600F5BC1C /* MySecondAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F32A073196C577600F5BC1C /* MySecondAppTests.swift */; };
-		3F53B1721978460700393AE2 /* main.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3F53B1711978460700393AE2 /* main.pd */; };
 		3F53B1741978484A00393AE2 /* Information-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F53B1731978484A00393AE2 /* Information-512.png */; };
 		3F53B17619784A0300393AE2 /* Screen Shot 2014-07-17 at 11.12.42 AM.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F53B17519784A0300393AE2 /* Screen Shot 2014-07-17 at 11.12.42 AM.png */; };
-		3F53B17A19784F5200393AE2 /* appicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F53B17919784F5200393AE2 /* appicon.png */; };
-		3F70015F1975CD4B006163D3 /* test.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3F70015E1975CD4B006163D3 /* test.pd */; };
+		3F53B1801978740C00393AE2 /* karpluck~.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3F53B17F1978740C00393AE2 /* karpluck~.pd */; };
+		3F53B18419787C6B00393AE2 /* main.pd in Resources */ = {isa = PBXBuildFile; fileRef = 3F53B18319787C6B00393AE2 /* main.pd */; };
+		3F53B186197883D300393AE2 /* Screen Shot 2014-07-17 at 3.20.06 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F53B185197883D300393AE2 /* Screen Shot 2014-07-17 at 3.20.06 PM.png */; };
 		3F7001711975D6D7006163D3 /* homescreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F7001701975D6D7006163D3 /* homescreen.png */; };
 		3F7001731975D800006163D3 /* violin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F7001721975D800006163D3 /* violin.png */; };
 		3F7001761975DAF7006163D3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F32A09C196C583400F5BC1C /* AudioToolbox.framework */; };
@@ -72,11 +72,11 @@
 		3F32A09A196C583000F5BC1C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3F32A09C196C583400F5BC1C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		3F32A09F196C588800F5BC1C /* MySecondApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MySecondApp-Bridging-Header.h"; sourceTree = "<group>"; };
-		3F53B1711978460700393AE2 /* main.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.pd; sourceTree = "<group>"; };
 		3F53B1731978484A00393AE2 /* Information-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Information-512.png"; sourceTree = "<group>"; };
 		3F53B17519784A0300393AE2 /* Screen Shot 2014-07-17 at 11.12.42 AM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2014-07-17 at 11.12.42 AM.png"; sourceTree = "<group>"; };
-		3F53B17919784F5200393AE2 /* appicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appicon.png; sourceTree = "<group>"; };
-		3F70015E1975CD4B006163D3 /* test.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.pd; sourceTree = "<group>"; };
+		3F53B17F1978740C00393AE2 /* karpluck~.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "karpluck~.pd"; sourceTree = "<group>"; };
+		3F53B18319787C6B00393AE2 /* main.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.pd; sourceTree = "<group>"; };
+		3F53B185197883D300393AE2 /* Screen Shot 2014-07-17 at 3.20.06 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2014-07-17 at 3.20.06 PM.png"; sourceTree = "<group>"; };
 		3F7001701975D6D7006163D3 /* homescreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homescreen.png; sourceTree = "<group>"; };
 		3F7001721975D800006163D3 /* violin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = violin.png; sourceTree = "<group>"; };
 		3F7001791975DCD8006163D3 /* drums.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = drums.png; sourceTree = "<group>"; };
@@ -137,9 +137,9 @@
 				3F70017D1975DCF0006163D3 /* guitar.png */,
 				3F53B1731978484A00393AE2 /* Information-512.png */,
 				3F53B17519784A0300393AE2 /* Screen Shot 2014-07-17 at 11.12.42 AM.png */,
-				3F53B17919784F5200393AE2 /* appicon.png */,
-				3F70015E1975CD4B006163D3 /* test.pd */,
-				3F53B1711978460700393AE2 /* main.pd */,
+				3F53B185197883D300393AE2 /* Screen Shot 2014-07-17 at 3.20.06 PM.png */,
+				3F53B18319787C6B00393AE2 /* main.pd */,
+				3F53B17F1978740C00393AE2 /* karpluck~.pd */,
 				3F32A060196C577600F5BC1C /* AppDelegate.swift */,
 				3F32A062196C577600F5BC1C /* ViewController.swift */,
 				3F32A064196C577600F5BC1C /* Main.storyboard */,
@@ -289,15 +289,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F70017A1975DCD8006163D3 /* drums.png in Resources */,
+				3F53B1801978740C00393AE2 /* karpluck~.pd in Resources */,
+				3F53B186197883D300393AE2 /* Screen Shot 2014-07-17 at 3.20.06 PM.png in Resources */,
 				3F7001711975D6D7006163D3 /* homescreen.png in Resources */,
-				3F70015F1975CD4B006163D3 /* test.pd in Resources */,
 				3F7001731975D800006163D3 /* violin.png in Resources */,
-				3F53B17A19784F5200393AE2 /* appicon.png in Resources */,
 				3F70017C1975DCE1006163D3 /* flute.png in Resources */,
 				3F53B1741978484A00393AE2 /* Information-512.png in Resources */,
 				3F70017E1975DCF0006163D3 /* guitar.png in Resources */,
-				3F53B1721978460700393AE2 /* main.pd in Resources */,
 				3F53B17619784A0300393AE2 /* Screen Shot 2014-07-17 at 11.12.42 AM.png in Resources */,
+				3F53B18419787C6B00393AE2 /* main.pd in Resources */,
 				3F32A066196C577600F5BC1C /* Main.storyboard in Resources */,
 				3F32A068196C577600F5BC1C /* Images.xcassets in Resources */,
 			);

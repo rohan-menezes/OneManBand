@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import CoreMotion
 
 let audioController = PdAudioController()
 
 class ViewController: UIViewController {
+    
+    let motionManager = CMMotionManager()
     
     @IBOutlet var Violin1: UIButton
     @IBOutlet var Violin2: UIButton
@@ -28,6 +31,15 @@ class ViewController: UIViewController {
     @IBOutlet var Flute6: UIButton
     @IBOutlet var Flute7: UIButton
     @IBOutlet var Flute8: UIButton
+    @IBOutlet var A: UIButton
+    @IBOutlet var Am: UIButton
+    @IBOutlet var C: UIButton
+    @IBOutlet var D: UIButton
+    @IBOutlet var Dm: UIButton
+    @IBOutlet var E: UIButton
+    @IBOutlet var Em: UIButton
+    @IBOutlet var F: UIButton
+    @IBOutlet var G: UIButton
     @IBOutlet var Cymbals: UIButton
     @IBOutlet var Snare: UIButton
     @IBOutlet var Bass: UIButton
@@ -36,6 +48,7 @@ class ViewController: UIViewController {
                             
     override func viewDidLoad() {
         super.viewDidLoad()
+        startAccelerationCollection()
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -43,6 +56,29 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func startAccelerationCollection()-> Void{
+        /*
+        motionManager.startAccelerometerUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: {(accelerometerData :     CMAccelerometerData!, error : NSError!) in
+            var data = [accelerometerData.acceleration.x, accelerometerData.acceleration.y, accelerometerData.acceleration.z]
+            
+            println("x: \(String(accelerometerData.acceleration.x))")
+           println("y: \(String(accelerometerData.acceleration.y))")
+            println("z: \(String(accelerometerData.acceleration.z))")
+            PdBase.sendList(data, toReceiver:"accelerometer")
+            })
+        */
+        
+        motionManager.startGyroUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: {(gyroscopeData :     CMGyroData!, error : NSError!) in
+            var data = [gyroscopeData.rotationRate.x, gyroscopeData.rotationRate.y, gyroscopeData.rotationRate.z]
+            
+            println(String(gyroscopeData.rotationRate.x))
+            println(String(gyroscopeData.rotationRate.y))
+            println(String(gyroscopeData.rotationRate.z))
+            PdBase.sendList(data, toReceiver:"gyroscope")
+            })
     }
     
     @IBAction func Violin1Action(sender: UIButton) {
@@ -123,6 +159,51 @@ class ViewController: UIViewController {
     @IBAction func Flute8Action(sender: UIButton) {
         PdBase.sendFloat(7, toReceiver: "pitchControl")
         PdBase.sendFloat(2, toReceiver: "instrument")
+    }
+    
+    @IBAction func AAction(sender: UIButton) {
+        PdBase.sendFloat(0, toReceiver: "pitchControl")
+        PdBase.sendFloat(1, toReceiver: "instrument")
+    }
+    
+    @IBAction func AmAction(sender: UIButton) {
+        PdBase.sendFloat(1, toReceiver: "pitchControl")
+        PdBase.sendFloat(1, toReceiver: "instrument")
+    }
+    
+    @IBAction func CAction(sender: UIButton) {
+        PdBase.sendFloat(2, toReceiver: "pitchControl")
+        PdBase.sendFloat(1, toReceiver: "instrument")
+    }
+    
+    @IBAction func DAction(sender: UIButton) {
+        PdBase.sendFloat(3, toReceiver: "pitchControl")
+        PdBase.sendFloat(1, toReceiver: "instrument")
+    }
+    
+    @IBAction func DmAction(sender: UIButton) {
+        PdBase.sendFloat(4, toReceiver: "pitchControl")
+        PdBase.sendFloat(1, toReceiver: "instrument")
+    }
+    
+    @IBAction func EAction(sender: UIButton) {
+        PdBase.sendFloat(5, toReceiver: "pitchControl")
+        PdBase.sendFloat(1, toReceiver: "instrument")
+    }
+    
+    @IBAction func EmAction(sender: UIButton) {
+        PdBase.sendFloat(6, toReceiver: "pitchControl")
+        PdBase.sendFloat(1, toReceiver: "instrument")
+    }
+    
+    @IBAction func FAction(sender: UIButton) {
+        PdBase.sendFloat(7, toReceiver: "pitchControl")
+        PdBase.sendFloat(1, toReceiver: "instrument")
+    }
+    
+    @IBAction func GAction(sender: UIButton) {
+        PdBase.sendFloat(8, toReceiver: "pitchControl")
+        PdBase.sendFloat(1, toReceiver: "instrument")
     }
     
     @IBAction func CymbalsAction(sender: UIButton) {

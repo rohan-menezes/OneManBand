@@ -141,11 +141,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="violin.png" translatesAutoresizingMaskIntoConstraints="NO" id="y23-pz-xeQ">
-                                <rect key="frame" x="11" y="20" width="768" height="1004"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2014-07-17 at 3.20.06 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="UaZ-YA-u7z">
+                                <rect key="frame" x="46" y="-54" width="677" height="1168"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLh-kJ-hB6">
-                                <rect key="frame" x="93" y="75" width="181" height="60"/>
+                                <rect key="frame" x="97" y="94" width="181" height="60"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -155,8 +155,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kv7-CZ-6rQ">
-                                <rect key="frame" x="199" y="373" width="50" height="30"/>
-                                <state key="normal" title="Violin 1">
+                                <rect key="frame" x="502" y="462" width="44" height="61"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -164,8 +165,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eET-k3-OKN">
-                                <rect key="frame" x="199" y="425" width="50" height="30"/>
-                                <state key="normal" title="Violin 2">
+                                <rect key="frame" x="502" y="576" width="44" height="65"/>
+                                <state key="normal" title="C#">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -173,8 +175,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwQ-HP-IgT">
-                                <rect key="frame" x="199" y="473" width="50" height="30"/>
-                                <state key="normal" title="Violin 3">
+                                <rect key="frame" x="407" y="828" width="46" height="70"/>
+                                <state key="normal" title="D">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -182,8 +185,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYp-2g-C7x">
-                                <rect key="frame" x="199" y="522" width="50" height="30"/>
-                                <state key="normal" title="Violin 4">
+                                <rect key="frame" x="495" y="351" width="51" height="62"/>
+                                <state key="normal" title="D#">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -191,26 +195,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWR-KT-h7f">
-                                <rect key="frame" x="199" y="571" width="50" height="30"/>
-                                <state key="normal" title="Violin 5">
+                                <rect key="frame" x="429" y="351" width="46" height="61"/>
+                                <state key="normal" title="E">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="Violin5Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rUt-z8-WKI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdQ-K7-pKu">
-                                <rect key="frame" x="199" y="617" width="50" height="30"/>
-                                <state key="normal" title="Violin 6">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="Violin6Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZxR-JM-Rtl"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6L-Vy-Rwx">
-                                <rect key="frame" x="199" y="664" width="50" height="30"/>
-                                <state key="normal" title="Violin 7">
+                                <rect key="frame" x="429" y="463" width="46" height="60"/>
+                                <state key="normal" title="F#">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -218,12 +215,23 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbK-YD-5NJ">
-                                <rect key="frame" x="199" y="710" width="50" height="30"/>
-                                <state key="normal" title="Violin 8">
+                                <rect key="frame" x="412" y="576" width="49" height="64"/>
+                                <state key="normal" title="G">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="Violin8Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ld7-6m-eAn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdQ-K7-pKu">
+                                <rect key="frame" x="502" y="828" width="51" height="71"/>
+                                <state key="normal" title="F">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Violin6Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZxR-JM-Rtl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -396,9 +404,110 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="guitar.png" translatesAutoresizingMaskIntoConstraints="NO" id="7WU-Zu-e1N">
                                 <rect key="frame" x="54" y="-112" width="661" height="1194"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39B-Pj-d6c">
+                                <rect key="frame" x="395" y="334" width="74" height="76"/>
+                                <state key="normal" title="A">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="AAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="hnk-5n-1xU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMR-PT-64N">
+                                <rect key="frame" x="455" y="246" width="75" height="77"/>
+                                <state key="normal" title="Am">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="AmAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="tjU-4Z-bXU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIJ-Yn-Tvy">
+                                <rect key="frame" x="325" y="443" width="73" height="76"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="CAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="apb-TB-L9G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSU-Gh-0aF">
+                                <rect key="frame" x="518" y="482" width="73" height="80"/>
+                                <state key="normal" title="D">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="DAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="5L1-gq-yxH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rM-Yw-5R2">
+                                <rect key="frame" x="531" y="139" width="75" height="79"/>
+                                <state key="normal" title="Dm">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="DmAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="mI9-xI-I3E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tic-wC-6tB">
+                                <rect key="frame" x="445" y="86" width="77" height="77"/>
+                                <state key="normal" title="E">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="EAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="MT9-ak-M6D"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyL-fl-hu5">
+                                <rect key="frame" x="335" y="246" width="76" height="76"/>
+                                <state key="normal" title="Em">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="EmAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="Tft-mT-ErL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoA-1w-qc2">
+                                <rect key="frame" x="384" y="582" width="73" height="77"/>
+                                <state key="normal" title="F">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="FAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="7dn-t1-Afi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gF-ml-eRS">
+                                <rect key="frame" x="261" y="556" width="73" height="75"/>
+                                <state key="normal" title="G">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="GAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="dP5-lg-mSY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="A" destination="39B-Pj-d6c" id="R2s-7s-jnB"/>
+                        <outlet property="Am" destination="UMR-PT-64N" id="9m2-8O-574"/>
+                        <outlet property="C" destination="kIJ-Yn-Tvy" id="K0v-Na-8q1"/>
+                        <outlet property="D" destination="aSU-Gh-0aF" id="Plz-qy-20s"/>
+                        <outlet property="Dm" destination="7rM-Yw-5R2" id="QvL-12-tGe"/>
+                        <outlet property="E" destination="tic-wC-6tB" id="NV2-IJ-FOJ"/>
+                        <outlet property="Em" destination="qyL-fl-hu5" id="q64-h0-S4U"/>
+                        <outlet property="F" destination="EoA-1w-qc2" id="d3M-TP-J5v"/>
+                        <outlet property="G" destination="1gF-ml-eRS" id="8pf-JR-Owe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="be3-Jv-RKA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -483,18 +592,38 @@
             </objects>
             <point key="canvasLocation" x="165" y="1438"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="EvE-I3-o3X">
+            <objects>
+                <viewController id="d55-oy-VN8" customClass="ViewController" customModule="MySecondApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m3g-es-t4f"/>
+                        <viewControllerLayoutGuide type="bottom" id="9b5-R8-qOc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5VQ-zG-7QY">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O1v-4Y-lPF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-774" y="2356"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Information-512.png" width="512" height="512"/>
         <image name="Screen Shot 2014-07-17 at 11.12.42 AM.png" width="665" height="1038"/>
+        <image name="Screen Shot 2014-07-17 at 3.20.06 PM.png" width="651" height="1046"/>
         <image name="drums.png" width="671" height="1144"/>
         <image name="flute.png" width="675" height="1135"/>
         <image name="guitar.png" width="675" height="1145"/>
         <image name="homescreen.png" width="525" height="655"/>
-        <image name="violin.png" width="549" height="662"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ec0-LJ-OtE"/>
+        <segue reference="WUl-Rf-zOA"/>
         <segue reference="mAa-Np-96I"/>
     </inferredMetricsTieBreakers>
 </document>
