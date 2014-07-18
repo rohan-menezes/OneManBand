@@ -8,7 +8,7 @@
         <!--View Controller-->
         <scene sceneID="akW-ha-eut">
             <objects>
-                <viewController id="aNZ-vZ-lQZ" sceneMemberID="viewController">
+                <viewController id="aNZ-vZ-lQZ" customClass="ViewController" customModule="MySecondApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yC9-BT-boE"/>
                         <viewControllerLayoutGuide type="bottom" id="8BW-hb-3sr"/>
@@ -58,6 +58,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="DrumsAction:" destination="aNZ-vZ-lQZ" eventType="touchUpInside" id="2zt-gN-8gL"/>
                                     <segue destination="vzr-Sa-Fcf" kind="show" id="aEJ-Q1-Y1j"/>
                                 </connections>
                             </button>
@@ -89,6 +90,9 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="Drums" destination="wYX-uK-BXd" id="S3C-bc-jeF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="klI-y7-h9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,6 +165,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="Violin1Action:" destination="BYZ-38-t0r" eventType="touchDown" id="8mI-BG-M7m"/>
                                     <action selector="Violin1Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C0g-dj-EY9"/>
                                 </connections>
                             </button>
@@ -171,6 +176,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="Violin2Action:" destination="BYZ-38-t0r" eventType="touchDown" id="Pou-Q0-T2T"/>
                                     <action selector="Violin2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rnt-g5-ERP"/>
                                 </connections>
                             </button>
@@ -182,6 +188,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Violin3Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PGx-5t-I0O"/>
+                                    <action selector="Violin3Action:" destination="BYZ-38-t0r" eventType="touchDown" id="ewS-Tb-bT2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UYp-2g-C7x">
@@ -192,6 +199,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Violin4Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J6W-Ck-TpD"/>
+                                    <action selector="Violin4Action:" destination="BYZ-38-t0r" eventType="touchDown" id="u30-8B-EEt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWR-KT-h7f">
@@ -201,6 +209,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="Violin5Action:" destination="BYZ-38-t0r" eventType="touchDown" id="AQF-hG-at6"/>
                                     <action selector="Violin5Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rUt-z8-WKI"/>
                                 </connections>
                             </button>
@@ -211,6 +220,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="Violin7Action:" destination="BYZ-38-t0r" eventType="touchDown" id="Dsa-Bq-Uzh"/>
                                     <action selector="Violin7Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eob-8Z-ZUU"/>
                                 </connections>
                             </button>
@@ -222,6 +232,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Violin8Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ld7-6m-eAn"/>
+                                    <action selector="Violin8Action:" destination="BYZ-38-t0r" eventType="touchDown" id="y9Q-Ui-nee"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdQ-K7-pKu">
@@ -232,6 +243,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Violin6Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZxR-JM-Rtl"/>
+                                    <action selector="Violin6Action:" destination="BYZ-38-t0r" eventType="touchDown" id="oEb-4j-JxP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -286,17 +298,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="Flute1Action:" destination="7bW-jt-0ei" eventType="touchDown" id="lC4-PJ-MmS"/>
                                     <action selector="Flute1Action:" destination="7bW-jt-0ei" eventType="touchUpInside" id="zIe-7p-kMu"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KC0-DZ-stn">
-                                <rect key="frame" x="456" y="150" width="50" height="49"/>
-                                <state key="normal" title="Flute 2">
-                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="Flute2Action:" destination="7bW-jt-0ei" eventType="touchUpInside" id="HT4-tL-erw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1oB-Lr-8ty">
@@ -306,6 +309,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="Flute3Action:" destination="7bW-jt-0ei" eventType="touchDown" id="3Nh-lS-Aio"/>
                                     <action selector="Flute3Action:" destination="7bW-jt-0ei" eventType="touchUpInside" id="WiG-L1-5fx"/>
                                 </connections>
                             </button>
@@ -316,6 +320,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="Flute4Action:" destination="7bW-jt-0ei" eventType="touchDown" id="EY7-qw-91K"/>
                                     <action selector="Flute4Action:" destination="7bW-jt-0ei" eventType="touchUpInside" id="FUG-vZ-Ebv"/>
                                 </connections>
                             </button>
@@ -326,6 +331,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="Flute5Action:" destination="7bW-jt-0ei" eventType="touchDown" id="Xhh-Av-tS8"/>
                                     <action selector="Flute5Action:" destination="7bW-jt-0ei" eventType="touchUpInside" id="b8K-3W-0wS"/>
                                 </connections>
                             </button>
@@ -337,6 +343,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Flute6Action:" destination="7bW-jt-0ei" eventType="touchUpInside" id="EX0-br-Xvn"/>
+                                    <action selector="Flute6Action:" destination="7bW-jt-0ei" eventType="touchDown" id="Hsm-UQ-8Kh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="skZ-Wb-Fuc">
@@ -346,6 +353,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="Flute7Action:" destination="7bW-jt-0ei" eventType="touchDown" id="ZNJ-Np-SO2"/>
                                     <action selector="Flute7Action:" destination="7bW-jt-0ei" eventType="touchUpInside" id="z0Y-xW-Mfy"/>
                                 </connections>
                             </button>
@@ -356,7 +364,19 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="Flute8Action:" destination="7bW-jt-0ei" eventType="touchDown" id="dWf-nC-eEo"/>
                                     <action selector="Flute8Action:" destination="7bW-jt-0ei" eventType="touchUpInside" id="yfx-Ak-KE1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KC0-DZ-stn">
+                                <rect key="frame" x="456" y="150" width="50" height="49"/>
+                                <state key="normal" title="Flute 2">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Flute2Action:" destination="7bW-jt-0ei" eventType="touchUpInside" id="HT4-tL-erw"/>
+                                    <action selector="Flute2Action:" destination="7bW-jt-0ei" eventType="touchDown" id="T6q-SR-2v7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -411,7 +431,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="AAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="hnk-5n-1xU"/>
+                                    <action selector="AAction:" destination="m4k-bV-g7Q" eventType="touchDragExit" id="Dc9-rU-oqP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMR-PT-64N">
@@ -421,7 +441,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="AmAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="tjU-4Z-bXU"/>
+                                    <action selector="AmAction:" destination="m4k-bV-g7Q" eventType="touchDragExit" id="9dA-W7-NOJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIJ-Yn-Tvy">
@@ -431,7 +451,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="CAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="apb-TB-L9G"/>
+                                    <action selector="CAction:" destination="m4k-bV-g7Q" eventType="touchDragExit" id="Eod-0G-DAV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSU-Gh-0aF">
@@ -441,7 +461,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="DAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="5L1-gq-yxH"/>
+                                    <action selector="DAction:" destination="m4k-bV-g7Q" eventType="touchDragExit" id="Dxw-zI-DTG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rM-Yw-5R2">
@@ -451,7 +471,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="DmAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="mI9-xI-I3E"/>
+                                    <action selector="DmAction:" destination="m4k-bV-g7Q" eventType="touchDragExit" id="8Gl-hM-cTX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tic-wC-6tB">
@@ -461,7 +481,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="EAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="MT9-ak-M6D"/>
+                                    <action selector="EAction:" destination="m4k-bV-g7Q" eventType="touchDragExit" id="aU5-Ht-hc6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyL-fl-hu5">
@@ -471,7 +491,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="EmAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="Tft-mT-ErL"/>
+                                    <action selector="EmAction:" destination="m4k-bV-g7Q" eventType="touchDragExit" id="dGS-VM-jUp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EoA-1w-qc2">
@@ -481,7 +501,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="FAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="7dn-t1-Afi"/>
+                                    <action selector="FAction:" destination="m4k-bV-g7Q" eventType="touchDragExit" id="Xtm-8z-KvV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gF-ml-eRS">
@@ -491,7 +511,17 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="GAction:" destination="m4k-bV-g7Q" eventType="touchUpInside" id="dP5-lg-mSY"/>
+                                    <action selector="GAction:" destination="m4k-bV-g7Q" eventType="touchDragExit" id="YTa-pB-9Nf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uf7-dt-nqh">
+                                <rect key="frame" x="532" y="744" width="73" height="77"/>
+                                <state key="normal" title="F">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BAction:" destination="m4k-bV-g7Q" eventType="touchDragExit" id="wL6-Go-6C7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -565,6 +595,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="BackDrumsAction:" destination="vzr-Sa-Fcf" eventType="touchUpInside" id="Uba-0E-3K0"/>
                                     <segue destination="aNZ-vZ-lQZ" kind="show" id="btU-Zb-uxj"/>
                                 </connections>
                             </button>
@@ -582,6 +613,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="BackDrums" destination="CcW-IN-Avx" id="p7q-Yi-LN0"/>
                         <outlet property="Bass" destination="boF-fR-ipz" id="LIq-AT-p05"/>
                         <outlet property="Cymbals" destination="9rg-BI-300" id="azp-ge-fNt"/>
                         <outlet property="Snare" destination="8ao-R0-rQ8" id="P88-49-qqC"/>
@@ -591,26 +623,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cmm-m0-bPQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="165" y="1438"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="EvE-I3-o3X">
-            <objects>
-                <viewController id="d55-oy-VN8" customClass="ViewController" customModule="MySecondApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="m3g-es-t4f"/>
-                        <viewControllerLayoutGuide type="bottom" id="9b5-R8-qOc"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="5VQ-zG-7QY">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="O1v-4Y-lPF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-774" y="2356"/>
         </scene>
     </scenes>
     <resources>
@@ -623,7 +635,7 @@
         <image name="homescreen.png" width="525" height="655"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WUl-Rf-zOA"/>
         <segue reference="mAa-Np-96I"/>
+        <segue reference="WUl-Rf-zOA"/>
     </inferredMetricsTieBreakers>
 </document>

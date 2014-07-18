@@ -14,6 +14,7 @@ let audioController = PdAudioController()
 class ViewController: UIViewController {
     
     let motionManager = CMMotionManager()
+    var onDrums = false
     
     @IBOutlet var Violin1: UIButton
     @IBOutlet var Violin2: UIButton
@@ -44,6 +45,8 @@ class ViewController: UIViewController {
     @IBOutlet var Snare: UIButton
     @IBOutlet var Bass: UIButton
     @IBOutlet var Toms: UIButton
+    @IBOutlet var Drums: UIButton
+    @IBOutlet var BackDrums: UIButton
     
                             
     override func viewDidLoad() {
@@ -71,16 +74,41 @@ class ViewController: UIViewController {
             })
         */
         
+        motionManager.gyroUpdateInterval = 0.15;
+        
         motionManager.startGyroUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler: {(gyroscopeData :     CMGyroData!, error : NSError!) in
             var data = [gyroscopeData.rotationRate.x, gyroscopeData.rotationRate.y, gyroscopeData.rotationRate.z]
             
-            println(String(gyroscopeData.rotationRate.x))
-            println(String(gyroscopeData.rotationRate.y))
-            println(String(gyroscopeData.rotationRate.z))
+            println("x: \(String(gyroscopeData.rotationRate.x))")
+            println("y: \(String(gyroscopeData.rotationRate.y))")
+            println("z: \(String(gyroscopeData.rotationRate.z))")
             PdBase.sendList(data, toReceiver:"gyroscope")
+            if self.onDrums == true
+            {
+                if gyroscopeData.rotationRate.x < -4.5 {
+                    PdBase.sendFloat(6, toReceiver: "instrument")
+                }
+                if gyroscopeData.rotationRate.x > 5 {
+                    PdBase.sendFloat(5, toReceiver: "instrument")
+                }
+                if gyroscopeData.rotationRate.z < -3.5 {
+                    PdBase.sendFloat(3, toReceiver: "instrument")
+                }
+                if gyroscopeData.rotationRate.z > 4.5 {
+                    PdBase.sendFloat(4, toReceiver: "instrument")
+                }
+            }
             })
+        
+    }
+    @IBAction func DrumsAction(sender: UIButton) {
+        onDrums = true
     }
     
+    @IBAction func BackDrumsAction(sender: UIButton) {
+        onDrums = false
+    
+    }
     @IBAction func Violin1Action(sender: UIButton) {
         PdBase.sendFloat(0, toReceiver: "pitchControl")
         PdBase.sendFloat(0, toReceiver: "instrument")
@@ -206,6 +234,11 @@ class ViewController: UIViewController {
         PdBase.sendFloat(1, toReceiver: "instrument")
     }
     
+    @IBAction func BAction(sender: UIButton) {
+        PdBase.sendFloat(9, toReceiver: "pitchControl")
+        PdBase.sendFloat(1, toReceiver: "instrument")
+    }
+    
     @IBAction func CymbalsAction(sender: UIButton) {
         PdBase.sendFloat(5, toReceiver: "instrument")
     }
@@ -221,6 +254,15 @@ class ViewController: UIViewController {
     @IBAction func TomsAction(sender: UIButton) {
         PdBase.sendFloat(4, toReceiver: "instrument")
     }
+    
+/*    @IBAction func DrumsAction(sender: UIButton) {
+        onDrums = true
+    }
+    
+    @IBAction func BackDrumsAction(sender: UIButton) {
+        onDrums = false
+    }
+*/
     
 }
 
